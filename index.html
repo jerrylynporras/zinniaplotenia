@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Authentication Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fresca&display=swap" rel="stylesheet">
+    <script defer src="js.js"></script> 
+  </head>
+  <body>
+  
+    <section class="CheckBox">
+      <h1>Authenticate Yourself</h1>
+      <p> This is just a simple Authentication System. 
+        The correct username and password is in the hints</p>
+      <form action="#" method="post" name="authentication" id="authentication" class="authentication">
+        <label for="username">Enter your username :</label>
+        <br>
+        <input type="text" name="username" id="username" minlength="3" maxlenth="15" pattern="[a-zA-Z0-9]+" required>
+        <br>
+        <label for="password">Enter your password :</label>
+        <br>
+        <input type="password" name="password" id="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+" required>
+        <br>
+        <input id="sub" type="submit" value="Submit" onclick="Verify();"></input>
+        <button id="hint" type="button" onclick="Show('hints');">Hints</button>
+      </form>
+      <div id="hints">
+               <ul>
+          <li>Actually the right username is Zinnia and the right passsword is plotenia123</li>
+          
+        </ul>
+      </div>
+    </section>
+  </body>  
+</html>
